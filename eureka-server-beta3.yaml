@@ -6,7 +6,7 @@ project:
     eureka3: 172.22.128.83
 
 server:
-  port: 8761
+  port: 9200
 
 spring:
   application:
