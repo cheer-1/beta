@@ -17,7 +17,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${project.host.eureka2}:${server.port}/eureka/,http://${project.host.eureka3}:${server.port}/eureka/
+      defaultZone: http://${project.host.eureka2}:10086/eureka/,http://${project.host.eureka3}:10087/eureka/
 
 logging:
   level:
