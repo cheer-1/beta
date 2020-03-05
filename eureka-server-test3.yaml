@@ -6,7 +6,7 @@ project:
     eureka3: 127.0.0.1
 
 server:
-  port: 8761
+  port: 10087
 
 spring:
   application:
@@ -17,7 +17,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${project.host.eureka1}:${server.port}/eureka/,http://${project.host.eureka2}:${server.port}/eureka/
+      defaultZone: http://${project.host.eureka1}:8761/eureka/,http://${project.host.eureka2}:10086/eureka/
 
 logging:
   level:
