@@ -6,13 +6,11 @@ project:
     eureka3: 172.22.128.83
 
 server:
-  port: 8761
+  port: 8762
 
 spring:
   application:
     name: eureka-server
-  freemarker:
-    prefer-file-system-access: false
 
 eureka:
   client:
