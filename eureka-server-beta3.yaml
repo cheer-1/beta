@@ -11,6 +11,8 @@ server:
 spring:
   application:
     name: eureka-server
+  freemarker:
+    prefer-file-system-access: false
 
 eureka:
   client:
