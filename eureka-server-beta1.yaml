@@ -17,7 +17,7 @@ spring:
     name: eureka-server
 
 eureka:
-  enviroment: ${project.model}
+  environment: ${project.model}
   instance:
     hostname: ${project.host.eureka1}
   client:
