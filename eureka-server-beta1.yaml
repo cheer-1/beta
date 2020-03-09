@@ -13,6 +13,9 @@ spring:
     name: eureka-server
 
 eureka:
+  enviroment: beta
+  instance:
+    hostname: ${project.host.eureka1}
   client:
     register-with-eureka: true
     fetch-registry: true
