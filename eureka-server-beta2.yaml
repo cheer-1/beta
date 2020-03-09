@@ -7,16 +7,22 @@ project:
 
 server:
   port: 9200
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    max-connection: 15000
 
 spring:
   application:
     name: eureka-server
 
 eureka:
-  enviroment: beta
+  enviroment: ${project.model}
   instance:
     hostname: ${project.host.eureka2}
   client:
+    healthcheck:
+      enabled: true
     register-with-eureka: true
     fetch-registry: true
     service-url:
