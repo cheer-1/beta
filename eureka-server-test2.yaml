@@ -1,0 +1,30 @@
+project:
+  model: dev
+  host:
+    eureka1: 127.0.0.1
+    eureka2: 127.0.0.1
+    eureka3: 127.0.0.1
+
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  environment: ${project.model}
+    instance:
+      hostname: ${project.host.eureka2}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${project.host.eureka1}:${server.port}/eureka/,http://${project.host.eureka3}:${server.port}/eureka/
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
