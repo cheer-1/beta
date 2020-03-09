@@ -5,7 +5,7 @@ spring:
   application:
     name: service-provider
 
-# eureka:
+eureka:
 #   client:
 #     service-url:
 #       defaultZone: http://172.22.128.81:9200/eureka/,http://172.22.128.82:9200/eureka/,http://172.22.128.83:9200/eureka/
