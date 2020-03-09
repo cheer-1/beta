@@ -1,0 +1,27 @@
+project:
+  model: dev
+  host:
+    eureka: 127.0.0.1
+
+server:
+  port: 8761
+
+eureka:
+  environment: ${project.model}
+  instance:
+    hostname: ${project.host.eureka}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:9200/eureka/
+  server:
+    enable-self-preservation: false  #关闭自我保护
+    eviction-interval-timer-in-ms: 5000 #每隔5秒进行一次服务列表清理
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
