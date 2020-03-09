@@ -5,10 +5,10 @@ spring:
   application:
     name: service-provider
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://172.22.128.81:9200/eureka/,http://172.22.128.82:9200/eureka/,http://172.22.128.83:9200/eureka/
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://172.22.128.81:9200/eureka/,http://172.22.128.82:9200/eureka/,http://172.22.128.83:9200/eureka/
   instance:
     lease-renewal-interval-in-seconds: 5 # \u6BCF\u96945\u79D2\u53D1\u9001\u4E00\u6B21\u5FC3\u8DF3
     lease-expiration-duration-in-seconds: 10 # 10\u79D2\u4E0D\u53D1\u9001\u5C31\u8FC7\u671F
